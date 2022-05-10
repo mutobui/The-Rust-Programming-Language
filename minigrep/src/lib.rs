@@ -1,6 +1,15 @@
+//! # Minigrep
+//!
+//! `minigrep` provide the functionality for dealing with local file
+//! 
+
+// --snip--
+
+
 use std::error::Error;
 use std::fs;
 use std::env;
+use function_language;
 
 pub struct Config {
     query: String,
@@ -39,6 +48,17 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
+/// Search the query value in contents, is_sensitive is turning on or off a sensitive case
+///
+/// # Examples
+///
+/// ```
+/// let contents = "my name is Stefan";
+/// let query = "stefan";
+/// let result = minigrep::search(query, contents, true);
+///
+/// assert_eq!(result, ["my name is Stefan"]);
+/// ```
 pub fn search<'a>(query: &str, contents: &'a str, is_sensitive: bool) -> Vec<&'a str> {
     contents.lines().filter(|line| {
         if is_sensitive == true{
