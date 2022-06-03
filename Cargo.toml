@@ -4,4 +4,5 @@ members = [
     "hello-cargo",
     "function-language",
     "minigrep",
+    "fearless-concurrency",
 ]
