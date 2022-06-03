@@ -1,1 +1,0 @@
-/Users/stefan_muto/Projects/Rust/The-Rust-Programming-Language/target/debug/libfearless_concurrency.rlib: /Users/stefan_muto/Projects/Rust/The-Rust-Programming-Language/fearless-concurrency/src/lib.rs
