@@ -5,4 +5,5 @@ members = [
     "function-language",
     "minigrep",
     "fearless-concurrency",
+    "state-pattern",
 ]
